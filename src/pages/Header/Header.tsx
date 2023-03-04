@@ -7,7 +7,7 @@ export default function Header()  {
     return(
         <Headers>
             <Title>
-                Kimjunseo's Portfolio
+                KJS' Portfolio
             </Title>
             <Info>
                 Who?

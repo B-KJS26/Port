@@ -14,4 +14,5 @@ const Mainbackground = styled.div`
     height: 930px;
     width: 100%;
     background-color: #D2F3F8;
+    opacity: 90%;
 `
