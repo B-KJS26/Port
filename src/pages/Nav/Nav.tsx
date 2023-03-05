@@ -8,10 +8,10 @@ export default function Naving() {
         window.scrollTo({top: 930, behavior: 'smooth'});
     }
     function gowhat() {
-
+        window.scrollTo({top: 1860, behavior: 'smooth'});
     }
     function goproject() {
-
+        window.scrollTo({top: 2790, behavior: 'smooth'});
     }
     return(
         <Nav>

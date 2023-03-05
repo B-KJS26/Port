@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useState, useEffect } from 'react';
 
-
-
-export default function Header()  {
-    return(
+export default function Header() {
+    return (
         <Headers>
             <Title>
                 KJS' Portfolio
@@ -22,8 +21,9 @@ export default function Header()  {
     );
 }
 
+
 const Headers = styled.div`
-    position: absolute;
+    position: fixed;
     height: 80px;
     width: 100%;
     max-width: 100%;
@@ -32,6 +32,7 @@ const Headers = styled.div`
     color: white;
     z-index: 1;
 `
+
 const Title = styled.h1`
     font-size: 60px;
     margin-top: 10px;
