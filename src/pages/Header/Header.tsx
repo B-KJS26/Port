@@ -30,7 +30,7 @@ const Headers = styled.div`
     display: flex;
     font-family: 'Ascrada', sans-serif, Arial;
     color: white;
-    z-index: 1;
+    z-index: 2;
 `
 
 const Title = styled.h1`
