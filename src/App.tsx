@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Main from './pages/Main/Main';
 import Naving from './pages/Nav/Nav';
 import Who from './pages/Who/Who';
+import What from './pages/What/What';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Naving/>
       <Main/>
       <Who/>
+      <What/>
     </Apps>
   );
 }

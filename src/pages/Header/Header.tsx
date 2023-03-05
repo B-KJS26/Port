@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 
+
 export default function Header() {
     return (
         <Headers>
@@ -34,20 +35,20 @@ const Headers = styled.div`
 `
 
 const Title = styled.h1`
-    font-size: 60px;
+    font-size: 4.5rem;
     margin-top: 10px;
     margin-left: 30px;
     text-shadow: 5px 4px 10px black;
 `
 const Info = styled.text`
-    font-size: 70px;
+    font-size: 5rem;
     margin-top: 5px;
     margin-left: 300px;
     text-shadow: 5px 4px 10px black;
     cursor: pointer;
 `
 const Goal = styled.text`
-    font-size: 70px;
+    font-size: 5rem;
     margin-top: 5px;
     margin-left: 100px;
     text-shadow: 5px 4px 10px black;
@@ -55,7 +56,7 @@ const Goal = styled.text`
 `
 
 const Project = styled.text`
-    font-size: 70px;
+    font-size: 5rem;
     margin-top: 5px;
     margin-left: 100px;
     text-shadow: 5px 4px 10px black;
