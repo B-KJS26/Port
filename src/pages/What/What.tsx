@@ -3,12 +3,13 @@ import React from 'react';
 export default function What() {
     return(
         <Whatpage>
-
         </Whatpage>
     );
 }
 const Whatpage = styled.div`
     position: absolute;
-    margin-top: 1840px;
-    background-color: #D2F3F8;
+    width: 100%;
+    height: 930px;
+    margin-top: 1860px;
+    background-color: #A5D8FA;
 `
