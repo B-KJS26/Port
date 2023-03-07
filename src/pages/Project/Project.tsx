@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import React from 'react';
-
 export default function Project() {
     return(
         <Projectpage>
@@ -15,4 +14,6 @@ const Projectpage = styled.div`
     height: 930px;
     margin-top: 2790px;
     background-color: #B4C3FF;
+    background-size: cover;
+    opacity: 50%;
 `

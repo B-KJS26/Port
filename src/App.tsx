@@ -5,16 +5,16 @@ import Naving from './pages/Nav/Nav';
 import Who from './pages/Who/Who';
 import What from './pages/What/What';
 import Project from './pages/Project/Project';
-
+import Four from './images/four.jpg';
 
 function App() {
   return (
     <Apps>
-      <Naving/>
-      <Main/> 
-      <Who/>
-      <What/>
-      <Project/>
+      <Naving />
+      <Main />
+      <Who />
+      <What />
+      <Project />
     </Apps>
   );
 }
@@ -22,6 +22,7 @@ function App() {
 const Apps = styled.div`
   width: 100%;
   height: 3720px;
+  
 `
 
 export default App;

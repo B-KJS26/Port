@@ -1,29 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
-import $ from 'jquery';
 export default function Naving() {
     const [scrollPosition, setScrollPosition] = useState(0);
     const updateScroll = () => {
         setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-        if(window.scrollY < 930) {
-            
-        }
-        else if(window.scrollY >= 930 && window.scrollY <= 1860) {
-            console.log('2');
-        }
-        else if(window.scrollY >= 1860 && window.scrollY <= 2790) {
-            console.log('3');
-        }
-        else if(window.scrollY >= 2790) {
-            console.log('4');
-        }
     }
     useEffect(() => {
         window.addEventListener('scroll', updateScroll);
     }, []);
-    
-    
     function gomain() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }

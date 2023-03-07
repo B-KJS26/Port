@@ -12,4 +12,6 @@ const Whatpage = styled.div`
     height: 930px;
     margin-top: 1860px;
     background-color: #A5D8FA;
+    background-size: cover;
+    opacity: 50%;
 `
