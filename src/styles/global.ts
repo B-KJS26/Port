@@ -1,12 +1,16 @@
 import { createGlobalStyle } from "styled-components";
-import Ascrada from '../fonts/Ascrada.ttf';
-
+import Nexa from '../fonts/Nexa-Heavy.ttf';
+import Nexalight from '../fonts/Nexa-ExtraLight.ttf';
 const GlobalStyle = createGlobalStyle`
   @font-face {
-        font-family: 'Ascrada';
-        src: local('GmarketSansTTFBold'), local('GmarketSansTTFBold');
-        font-style: normal;
-        src: url(${Ascrada}) format('truetype');
+    font-family: 'Nexa';
+    font-style: normal;
+    src: url(${Nexa}) format('truetype');
+  }
+  @font-face {
+    font-family: 'NexaLight';
+    font-style: normal;
+    src: url(${Nexalight}) format('truetype');
   }
 `
-export default GlobalStyle;
+export default GlobalStyle; 

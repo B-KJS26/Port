@@ -23,14 +23,14 @@ export default function Naving() {
     }
     
     const MainButton = styled.button`
-    background-color: ${window.scrollY < 930 ? "#FFD2FF" : "white"};
-    width: 25px;
-    height: 25px;
+    background-color: ${window.scrollY < 930 ? "#FF9CBB" : "white"};
+    width: 1.3vw;
+    height: 2.7vh;
     border-radius: 50px;
     border: 0;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow: 2px 4px 3px black;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.08);
     transform: ${window.scrollY < 930 ? "scale(1.4)" : "scale(1)"};
     &:hover {
         transform: scale(1.5);
@@ -39,13 +39,13 @@ export default function Naving() {
     `
     const WhoButton = styled.button`
     background-color: ${window.scrollY >= 930 ? (window.scrollY < 1860 ? "#FFD2FF" : "white") : "white"};
-    width: 25px;
-    height: 25px;
+    width: 1.3vw;
+    height: 2.7vh;
     border-radius: 50px;
     border: 0;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow: 2px 4px 3px black;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.08);
     transform: ${window.scrollY >= 930 ? (window.scrollY < 1860 ? "scale(1.4)" : "scale(1)") : "scale(1)"};
     &:hover {
         transform: scale(1.5);
@@ -55,13 +55,13 @@ export default function Naving() {
 
     const WhatButton = styled.button`
     background-color: ${window.scrollY >= 1860 ? (window.scrollY < 2790 ? "#FFD2FF" : "white") : "white"};
-    width: 25px;
-    height: 25px;
+    width: 1.3vw;
+    height: 2.7vh;
     border-radius: 50px;
     border: 0;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow: 2px 4px 3px black;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.08);
     transform: ${window.scrollY >= 1860 ? (window.scrollY < 2790 ? "scale(1.4)" : "scale(1)") : "scale(1)"};
     &:hover {
         transform: scale(1.5);
@@ -70,14 +70,14 @@ export default function Naving() {
 `
 
     const ProjectButton = styled.button`
-    background-color: ${window.scrollY >= 2790 ? "#FFD2FF": "white"};
-    width: 25px;
-    height: 25px;
+    background: ${window.scrollY >= 2790 ? "linear-gradient(blue, pink)" : "white"};
+    width: 1.3vw;
+    height: 2.7vh;
     border-radius: 50px;
     border: 0;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow: 2px 4px 3px black;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.08);
     transform: ${window.scrollY >= 2790 ? "scale(1.5)": "scale(1)"};
     &:hover {
         transform: scale(1.5);
@@ -98,12 +98,13 @@ export default function Naving() {
 
 const Nav = styled.div`
     position: fixed;
-    width: 40px;
-    height: 150px;
+    width: 1%;
+    height: 1%;
     z-index: 2;
-    margin-left: 99%;
+    margin-left: 98%;
     transform: translateX(-99%);
     margin-top: 18%;
     text-align: center;
+    
     `
 

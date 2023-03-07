@@ -15,5 +15,5 @@ const Projectpage = styled.div`
     margin-top: 2790px;
     background-color: #B4C3FF;
     background-size: cover;
-    opacity: 50%;
+    opacity: 100%;
 `

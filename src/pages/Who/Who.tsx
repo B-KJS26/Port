@@ -14,5 +14,5 @@ const Whopage = styled.div`
     height: 930px;
     margin-top: 930px;
     background-size: cover;
-    opacity: 50%;
+    opacity: 100%;
 `

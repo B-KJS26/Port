@@ -1,36 +1,25 @@
-import styled from "styled-components";
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { CgArrowDown } from 'react-icons/cg';
-import BG from '../../images/Main.png';
+import styled from 'styled-components';
+import Ligradient from '../../images/111.png';
 export default function Main() {
-    return (
-        <Mainbackground>
-        </Mainbackground>
+    return(
+        <Maining>
+            <Title>KIMJUNSEO</Title>
+        </Maining>
     );
 }
-
-const Mainbackground = styled.div`
+const Maining = styled.div`
     position: absolute;
     height: 930px;
     width: 100%;
-    background-size: cover;
-    align-items: center;
+    top: 0;
+    text-align: left;
     justify-content: center;
-    &::before {
-        content: "";
-        background-size: cover;
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: 0.3;
-        z-index: -1;
-        background-image: url(${BG});
-    }
+    background-image: url(${Ligradient});
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 `
-const Me = styled.div`
-    z-index: 1;
-    opacity: 100%;
+const Title = styled.text`
+    font-family: Nexa;
+    font-size: 80px;
+    color: white;
 `
