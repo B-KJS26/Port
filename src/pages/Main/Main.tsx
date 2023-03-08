@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 import Ligradient from '../../images/111.png';
+import Profilepic from '../../images/profile.jpg';
+
 export default function Main() {
+    function nexted() {
+        window.scrollTo({ top: 930, behavior: 'smooth' });
+    }
     return (
         <Maining>
             <DecoLine></DecoLine>
             <Title>MINJUN MAN</Title>
             <Subtitle>Frontend Developer</Subtitle>
-            <Morebutton>watch more</Morebutton>
+            <Morebutton onClick={nexted}>watch more</Morebutton>
             <DecoBox></DecoBox>
             <Circlebg></Circlebg>
         </Maining>
@@ -63,15 +68,12 @@ const Subtitle = styled.h1`
 `
 const Circlebg = styled.div`
     position: absolute;
-    width: 25vw;
+    width: 30vw;
     height: 72vh;
-    margin-left: 60vw;
+    margin-left: 57vw;
     margin-top: 14vh;
-    background: rgba(255, 255, 255, 0.49);
-    mix-blend-mode: normal;
-    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(25px);
-    border-radius: 30px;
+    background-image: url(${Profilepic});
+    background-size: cover;
 `
 
 const Morebutton = styled.button`
@@ -89,4 +91,9 @@ const Morebutton = styled.button`
     color: white;
     font-family: Nexaheavy;
     font-size: 1.8rem;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+        transition: .6s;
+    }
 `
