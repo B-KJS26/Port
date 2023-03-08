@@ -68,7 +68,7 @@ const Subtitle = styled.h1`
 `
 const Circlebg = styled.div`
     position: absolute;
-    width: 30vw;
+    width: 30rvw;
     height: 72vh;
     margin-left: 57vw;
     margin-top: 14vh;
