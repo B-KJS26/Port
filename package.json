@@ -27,6 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage":"https://kimserendey.netlify.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -54,4 +55,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
+  
 }
