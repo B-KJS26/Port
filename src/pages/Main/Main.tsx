@@ -4,7 +4,7 @@ export default function Main() {
     return(
         <Maining>
             <DecoBox></DecoBox>
-            <Title>KIM SERENDEY</Title>
+            <Title>KIM HyeonJe</Title>
             <Subtitle>Frontend Developer</Subtitle>
             <DecoBox2></DecoBox2>
         </Maining>
