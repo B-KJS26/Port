@@ -12,11 +12,23 @@ export default function Main() {
             <Title>MINJUN MAN</Title>
             <Subtitle>Frontend Developer</Subtitle>
             <Morebutton onClick={nexted}>watch more</Morebutton>
+            <CircleB></CircleB>
             <DecoBox></DecoBox>
-            <Circlebg></Circlebg>
         </Maining>
     );
 }
+
+const CircleB = styled.div`
+    position: absolute;
+    width: 30vw;
+    height: 72vh;
+    margin-left: 57vw;
+    margin-top: 14vh;
+    background-color: black;
+    background-image: url(${Profilepic});
+    background-size: cover;
+    z-index: 3;
+`
 
 
 const Maining = styled.div`
@@ -66,15 +78,7 @@ const Subtitle = styled.h1`
     font-size: 2rem;
     color: white;
 `
-const Circlebg = styled.div`
-    position: absolute;
-    width: 30rvw;
-    height: 72vh;
-    margin-left: 57vw;
-    margin-top: 14vh;
-    background-image: url(${Profilepic});
-    background-size: cover;
-`
+
 
 const Morebutton = styled.button`
     position: absolute;
