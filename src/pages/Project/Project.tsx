@@ -13,7 +13,6 @@ const Projectpage = styled.div`
     width: 100%;
     height: 930px;
     margin-top: 2790px;
-    background-color: #B4C3FF;
     background-size: cover;
     opacity: 100%;
 `

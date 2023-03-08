@@ -3,7 +3,10 @@ import Ligradient from '../../images/111.png';
 export default function Main() {
     return(
         <Maining>
-            <Title>KIMJUNSEO</Title>
+            <DecoBox></DecoBox>
+            <Title>KIM JUNSEO</Title>
+            <Subtitle>Frontend Developer</Subtitle>
+            <DecoBox2></DecoBox2>
         </Maining>
     );
 }
@@ -18,8 +21,36 @@ const Maining = styled.div`
     background-size: 100% 100%;
     background-repeat: no-repeat;
 `
-const Title = styled.text`
+const DecoBox = styled.div`
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin-left: 100px;
+    margin-top: 100px;
+`
+const DecoBox2 = styled.div`
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin-left: 100px;
+    margin-top: 805px;
+`
+const Title = styled.h1`
+    position: absolute;
+    margin-top: 280px;  
+    margin-left: 100px; 
     font-family: Nexa;
-    font-size: 80px;
+    font-size: 130px;
     color: white;
+`
+const Subtitle = styled.p`
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 100px; 
+    font-family: NexaLight;
+    font-size: 70px;
+    color: white;
+
 `

@@ -23,7 +23,7 @@ export default function Naving() {
     }
     
     const MainButton = styled.button`
-    background-color: ${window.scrollY < 930 ? "#FF9CBB" : "white"};
+    background: ${window.scrollY < 930 ? "linear-gradient(#fbb3e9, #fad9d7, #bffffd)" : "white"};
     width: 1.3vw;
     height: 2.7vh;
     border-radius: 50px;
@@ -38,7 +38,7 @@ export default function Naving() {
     }
     `
     const WhoButton = styled.button`
-    background-color: ${window.scrollY >= 930 ? (window.scrollY < 1860 ? "#FFD2FF" : "white") : "white"};
+    background: ${window.scrollY >= 930 ? (window.scrollY < 1860 ? "linear-gradient(#fbb3e9, #fad9d7, #bffffd)" : "white") : "white"};
     width: 1.3vw;
     height: 2.7vh;
     border-radius: 50px;
@@ -54,7 +54,7 @@ export default function Naving() {
 `
 
     const WhatButton = styled.button`
-    background-color: ${window.scrollY >= 1860 ? (window.scrollY < 2790 ? "#FFD2FF" : "white") : "white"};
+    background: ${window.scrollY >= 1860 ? (window.scrollY < 2790 ? "linear-gradient(#fbb3e9, #fad9d7, #bffffd)" : "white") : "white"};
     width: 1.3vw;
     height: 2.7vh;
     border-radius: 50px;
@@ -70,7 +70,7 @@ export default function Naving() {
 `
 
     const ProjectButton = styled.button`
-    background: ${window.scrollY >= 2790 ? "linear-gradient(blue, pink)" : "white"};
+    background: ${window.scrollY >= 2790 ? "linear-gradient(#fbb3e9, #fad9d7, #bffffd)" : "white"};
     width: 1.3vw;
     height: 2.7vh;
     border-radius: 50px;

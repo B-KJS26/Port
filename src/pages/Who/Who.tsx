@@ -9,7 +9,6 @@ export default function Who() {
 }
 const Whopage = styled.div`
     position: absolute;
-    background-color: #B4C3FF;
     width: 100%;
     height: 930px;
     margin-top: 930px;
