@@ -1,23 +1,112 @@
 import styled from 'styled-components';
 import Ligradient from '../../images/111.png';
 import Profilepic from '../../images/profile.jpg';
-
+import Github from '../../images/github.png';
+import Velog from '../../images/velog.jpg';
+import Notions from '../../images/notion.png';
+import FadeIn  from 'react-fade-in';
+import React from 'react';
+import { BsArrowDownCircle } from 'react-icons/bs';
+import './Main.scss';
 export default function Main() {
+    const [judge, setJudge] = React.useState(true);
     function nexted() {
         window.scrollTo({ top: 930, behavior: 'smooth' });
     }
+    function velog() {
+        window.location.href = 'https://velog.io/@digyrh456789';
+    }
+    function github() {
+        window.location.href = 'https://github.com/B-KJS26';
+    }
+    function notioning() {
+        window.location.href = 'https://www.notion.so/70843f63a76440f9b6338b3cf92b1351';
+    }
+    const [scrollPosition, setScrollPosition] = React.useState(0);
+    const updateScroll = () => {
+        setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+        if(window.scrollY < 700) {
+            setJudge(true);
+        }
+        else {
+            setJudge(false);
+        }
+    }
+    React.useEffect(() => {
+        window.addEventListener('scroll', updateScroll);
+    }, []);
     return (
         <Maining>
-            <DecoLine></DecoLine>
-            <Title>MINJUN MAN</Title>
-            <Subtitle>Frontend Developer</Subtitle>
-            <Morebutton onClick={nexted}>watch more</Morebutton>
-            <CircleB></CircleB>
-            <DecoBox></DecoBox>
+            <FadeIn
+                delay={30}
+                visible={judge}
+            >
+                <DecoLine></DecoLine>
+                <DecoBox></DecoBox>
+            </FadeIn>
+            <FadeIn
+                delay={100}
+                visible={judge}
+            >
+                <Bloging>
+                    <Imageone onClick={github}></Imageone>
+                    <Imagetwo onClick={velog}></Imagetwo>
+                    <Imagethree onClick={notioning}></Imagethree>
+                </Bloging>
+                <FadeIn delay={150} visible={judge}>
+                    <Title>KIM JUNSEO</Title>
+                    <Subtitle>Frontend Developer</Subtitle>
+                    <CircleB></CircleB>
+                </FadeIn>
+                <div className={scrollPosition < 100 ? "wrapping" : "nowrapping"}>
+                    <BsArrowDownCircle size="60" className='botarrow' onClick={nexted}/>
+                </div> 
+            </FadeIn>
         </Maining>
     );
 }
 
+const Bloging = styled.div`
+    position: absolute;
+    width: 30vw;
+    height: 10vh;
+    maring-top;
+    margin-left: 10vw;
+    margin-top: 57vh;
+`
+const Imageone = styled.div`
+    position: absolute;
+    width: 5vw;
+    height: 10.2vh;
+    margin-left: 0vw;
+    border-radius: 5rem;
+    background-image: url(${Github});
+    background-size: cover;
+    z-index: 5;
+    cursor: pointer;
+`
+const Imagetwo = styled.div`
+    position: absolute;
+    width: 5vw;
+    height: 10.3vh;
+    margin-left: 7vw;
+    border-radius: 5rem;
+    background-image: url(${Velog});
+    background-size: cover;
+    z-index: 5;
+    cursor: pointer;
+`
+const Imagethree = styled.div`
+    position: absolute;
+    width: 5vw;
+    height: 10.3vh;
+    margin-left: 14vw;
+    border-radius: 5rem;
+    background-image: url(${Notions});
+    background-size: cover;
+    z-index: 5;
+    cursor: pointer;
+`
 const CircleB = styled.div`
     position: absolute;
     width: 30vw;
@@ -78,25 +167,3 @@ const Subtitle = styled.h1`
     color: white;
 `
 
-
-const Morebutton = styled.button`
-    position: absolute;
-    margin-left: 10vw;
-    margin-top: 64vh;
-    height: 6vh;
-    width: 12vw;
-    border: 4px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 3rem;
-    background-color: #ffffff;
-    background-color: rgba( 255, 255, 255, 0);
-    color: white;
-    font-family: Nexaheavy;
-    font-size: 1.8rem;
-    cursor: pointer;
-    &:hover {
-        transform: scale(1.1);
-        transition: .6s;
-    }
-`
