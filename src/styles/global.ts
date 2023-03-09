@@ -4,6 +4,7 @@ import Nexalight from '../fonts/Nexa-ExtraLight.ttf';
 import Nexablack from '../fonts/Nexa-Trial-Black.ttf';
 import Nexabold from '../fonts/Nexa-Trial-Bold.ttf';
 import Nexaheavy from '../fonts/Nexa-Trial-Heavy.ttf';
+import EFA from '../fonts/EFA.ttf';
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Nexa';
@@ -11,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     src: url(${Nexa}) format('truetype');
   }
   @font-face {
-    font-family: 'NexaLight';
+    font-family: 'Nexalight';
     font-style: normal;
     src: url(${Nexalight}) format('truetype');
   }
@@ -29,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Nexaheavy';
     font-style: normal;
     src: url(${Nexaheavy}) format('truetype');
+  }
+  @font-face {
+    font-family: 'Efa';
+    font-style: normal;
+    src: url(${EFA}) format('truetype');
   }
 `
 export default GlobalStyle; 

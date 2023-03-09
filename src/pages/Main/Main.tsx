@@ -27,7 +27,6 @@ const CircleB = styled.div`
     background-color: black;
     background-image: url(${Profilepic});
     background-size: cover;
-    z-index: 3;
 `
 
 
