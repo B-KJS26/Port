@@ -10,7 +10,7 @@ export default function Who() {
     const [scrollPosition, setScrollPosition] = React.useState(0);
     const updateScroll = () => {
         setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-        if(window.scrollY > 500 && window.scrollY < 1500) {
+        if(window.scrollY > 400 && window.scrollY < 1600) {
             setJudgement(true);
         }
         else {
@@ -26,7 +26,7 @@ export default function Who() {
                 visible={judgement}
             >
             <Profileimage></Profileimage>
-            <Subed>소통을 좋아하며 모든 일에 최선을 다하는</Subed>
+            <Subed>소통을 좋아하며 사소한 일들에도 최선을 다하는</Subed>
             <Name><Big>김준서</Big>입니다.</Name>
             <Pinkline></Pinkline>
             <Blackline></Blackline>
