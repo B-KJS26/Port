@@ -20,7 +20,7 @@ function App() {
 
 const Apps = styled.div`
   width: 100%;
-  height: 4820px;
+  height: 5320px;
 `
 
 export default App;

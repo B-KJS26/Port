@@ -34,7 +34,8 @@ export default function Who() {
                 <Intro>
                     프론트엔드 개발자를 희망하고 있습니다.<br/>
                     사람들과 소통하며 서로 의견을 나누는 것을 좋아합니다.<br/>
-                    모든 일에 최선을 다하며 타인의 목소리를 경청하고, 받아들일 수 있는 개발자가 되기 위해 노력하고 있습니다.
+                    모든 일에 최선을 다하고, 사람들의 목소리를 귀담아 들으며,
+                    다른 사람들의 관점에서 생각하고 이해할 수 있는 개발자가 되기 위해 노력하고 있습니다.
                 </Intro>
             </Introduction>
             <Pack onClick={nexted}>
@@ -108,6 +109,7 @@ const Blackline = styled.div`
 `
 const Intro = styled.p`
     font-size: 2rem;
+    line-height: 3rem;
 `
 const Whopage = styled.div`
     position: absolute;
