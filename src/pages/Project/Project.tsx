@@ -2,33 +2,52 @@ import styled from "styled-components";
 import React from 'react';
 import { SiPolymerproject } from 'react-icons/si';
 import Sample from '../../images/sample.jpg';
+import FadeIn from "react-fade-in/lib/FadeIn";
 export default function Project() {
+    const [judgement, setJudgement] = React.useState(false);
+    const [scrollPosition, setScrollPosition] = React.useState(0);
+    const updateScroll = () => {
+        setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+        if (window.scrollY > 2300) {
+            setJudgement(true);
+        }
+        else {
+            setJudgement(false);
+        }
+    }
+    React.useEffect(() => {
+        window.addEventListener('scroll', updateScroll);
+    }, []);
     return (
         <Projectpage>
-            <Icons>
-                <SiPolymerproject size={70}></SiPolymerproject>
-            </Icons>
-            <Title>프로젝트들</Title>
-            <FirstProject>
-                <FirstImage></FirstImage>
-                <FirstTitle>JJOK</FirstTitle>
-                <BlackLine></BlackLine>
-                <FirstSub>학교에 다니는 학생들에게 양질의 정보(학사일정, 급식, 시간표 등)를 제공함으로써 학생들의 학교생활 질 향상을 위해 만든 웹 서비스입니다.</FirstSub>
-            </FirstProject>
-            <SecondProject>
-                <SecondImage></SecondImage>
-                <Textbox>
-                    <SecondTitle>꼬꼬막</SecondTitle>
-                    <BlackLine2></BlackLine2>
-                    <SecondSub>꼬꼬막은 동네 안에서 사용자끼리 옷을 대여하고 교환할 수 있는 웹 / 앱 서비스입니다. 누구나 자신이 잘 안 입는 옷을 대여해주거나, 크리스마스와 같은 특별한 날에만 입고 싶은 옷을 대여할 수 있습니다.</SecondSub>
-                </Textbox>
-            </SecondProject>
-            <ThirdProject>
-                <FirstImage></FirstImage>
+            <FadeIn
+                visible={judgement}
+            >
+                <Icons>
+                    <SiPolymerproject size={70}></SiPolymerproject>
+                </Icons>
+                <Title>프로젝트들</Title>
+                <FirstProject>
+                    <FirstImage></FirstImage>
+                    <FirstTitle>JJOK</FirstTitle>
+                    <BlackLine></BlackLine>
+                    <FirstSub>학교에 다니는 학생들에게 양질의 정보(학사일정, 급식, 시간표 등)를 제공함으로써 학생들의 학교생활 질 향상을 위해 만든 웹 서비스입니다.</FirstSub>
+                </FirstProject>
+                <SecondProject>
+                    <SecondImage></SecondImage>
+                    <Textbox>
+                        <SecondTitle>꼬꼬막</SecondTitle>
+                        <BlackLine2></BlackLine2>
+                        <SecondSub>꼬꼬막은 동네 안에서 사용자끼리 옷을 대여하고 교환할 수 있는 웹 / 앱 서비스입니다. 누구나 자신이 잘 안 입는 옷을 대여해주거나, 크리스마스와 같은 특별한 날에만 입고 싶은 옷을 대여할 수 있습니다.</SecondSub>
+                    </Textbox>
+                </SecondProject>
+                <ThirdProject>
+                    <FirstImage></FirstImage>
                     <FirstTitle>건강하게해조</FirstTitle>
                     <BlackLine></BlackLine>
                     <FirstSub>코로나 19로 인한 사람들의 줄어든 운동량을 늘리기 위해 집이나, 집 근처에서 사람들과 함께 게임형식으로 경쟁하면서 운동할 수 있으면 어떨까? 라는 생각에서 출발해 만들어진 앱 서비스 입니다.</FirstSub>
-            </ThirdProject>
+                </ThirdProject>
+            </FadeIn>
         </Projectpage>
     );
 }
