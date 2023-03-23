@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { SiStackblitz } from 'react-icons/si';
 import { DiReact, DiJavascript1 } from 'react-icons/di';
 import { TbBrandTypescript } from 'react-icons/tb';
@@ -35,43 +35,27 @@ export default function What() {
             >
                 <FirstSkill>
                     <Icon>
-                        <DiReact size={65}></DiReact>
+                        <DiReact size={200}></DiReact>
                     </Icon>
                     <Text>React</Text>
                     <SecondIcon>
                         <RiArrowDownSLine size={45}></RiArrowDownSLine>
                     </SecondIcon>
-                    <Explanation>
-                    </Explanation>
+                    <Explanation></Explanation>
                 </FirstSkill>
-                <SecondSkill>
-                    <Icon>
-                        <TbBrandTypescript size={65}></TbBrandTypescript>
-                    </Icon>
-                    <Text>TypeScript</Text>
-                    <SecondIcon>
-                        <RiArrowDownSLine size={45}></RiArrowDownSLine>
-                    </SecondIcon>
-                    <Explanations>
-                    </Explanations>
-                </SecondSkill>
-                <ThirdSkill>
-                    <Icon>
-                        <DiJavascript1 size={65}></DiJavascript1>
-                    </Icon>
-                    <Text>JavaScript</Text>
-                    <SecondIcon>
-                        <RiArrowDownSLine size={45}></RiArrowDownSLine>
-                    </SecondIcon>
-                    <Explanationse>
-                    </Explanationse>
-                </ThirdSkill>
             </FadeIn>
         </Whatpage>
     );
 }
 
-
+const rotation = keyframes`
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+`
 const ThirdSkill = styled.div`
     width: 80vw;
     height: 7vh;
@@ -89,7 +73,6 @@ const ThirdSkill = styled.div`
         --tt: visibility 0s linear 0s, opacity 800ms;
     }
 `
-
 const SecondSkill = styled.div`
     width: 80vw;
     height: 7vh;
@@ -106,13 +89,10 @@ const SecondSkill = styled.div`
         --st: visibility 0s linear 0s, opacity 800ms;
     }
 `
-
 const Text = styled.p`
-    position: absolute;
     font-family: Nexabold;
-    font-size: 2.5em;
-    margin-top: 0.2vh;
-    margin-left: 4vw;
+    font-size: 2.5vw;
+    margin-top: -5%;
 `
 const SecondIcon = styled.div`
     position: absolute;
@@ -141,7 +121,7 @@ const Explanations = styled.div`
     width: 80vw;
     height: 30vh;
     background-color: black;
-    margin-top: 14vh;
+    margin-top: 7vh;
     visibility: var(--se);
     opacity: var(--so);
     border-radius: 0px 0px 20px 20px;
@@ -154,7 +134,6 @@ const Explanation = styled.div`
     height: 30vh;
     background-color: black;
     margin-top: 7vh;
-    border-radius: 0px 0px 20px 20px;
     transition: all ease .5s;
     z-index: 2;
     visibility: var(--fe);
@@ -162,35 +141,35 @@ const Explanation = styled.div`
     transition: var(--ft);
 `
 const Icon = styled.div`
-    position: absolute;
-    width: 10vw;
+    color: #61dafc;
+    
+    animation: ${rotation} infinite 20s linear;
 `
 
 const FirstSkill = styled.div`
-    width: 80vw;
-    height: 7vh;
-    margin-left: 10vw;
-    margin-top: 30vh;
+    position: absolute;
+    width: 20vw;
+    height: 50vh;
+    margin-left: 5vw;
+    margin-top: 20vh;
     background-color: #ECE6CC;
-    text-align: left;
-    justify-content: center;
     border: 1px solid;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
     transition: all ease .5s;
     z-index: 1;
+    justify-content: center;
+    text-align: center;
     &:hover {
         --fe: visible;
         --fo: 1;
         --ft: visibility 0s linear 0s, opacity 800ms;
     }
 `
-
 const Icons = styled.div`
     position: absolute;
     margin-left: 2vw;
     margin-top: 5vh;
 `
-
 const Title = styled.h1`
     position: absolute;
     font-family: Efa;
@@ -200,7 +179,7 @@ const Title = styled.h1`
 `
 
 const Whatpage = styled.div`
-    --fe: hidden;
+    --fe: none;
     --fo: 0;
     --ft: visibility 0s linear 300ms, opacity 300ms;
     --se: hidden;
