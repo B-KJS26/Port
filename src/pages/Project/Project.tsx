@@ -157,7 +157,7 @@ const Projectpage = styled.div`
     position: absolute;
     width: 100%;
     height: 2530px;
-    margin-top: 2790px;
+    margin-top: 151vw;
     background-size: cover;
     opacity: 100%;
 `

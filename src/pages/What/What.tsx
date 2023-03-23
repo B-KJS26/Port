@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components";
 import { SiStackblitz } from 'react-icons/si';
 import { DiReact, DiJavascript1 } from 'react-icons/di';
 import { TbBrandTypescript } from 'react-icons/tb';
-import { RiArrowDownSLine } from 'react-icons/ri';
 import FadeIn from "react-fade-in/lib/FadeIn";
 import React from 'react';
 export default function What() {
@@ -28,26 +27,59 @@ export default function What() {
                 <Icons>
                     <SiStackblitz size={70}></SiStackblitz>
                 </Icons>
-                <Title>사용하는 기술들</Title>
+                <Title>주로 사용하는 기술들</Title>
             </FadeIn>
             <FadeIn
                 visible={judgement}
             >
                 <FirstSkill>
                     <Icon>
-                        <DiReact size={200}></DiReact>
+                        <DiReact className='reacticon'></DiReact>
                     </Icon>
                     <Text>React</Text>
-                    <SecondIcon>
-                        <RiArrowDownSLine size={45}></RiArrowDownSLine>
-                    </SecondIcon>
-                    <Explanation></Explanation>
+                    <Explanation>
+                        <Extext>
+                            <Tex>
+                                제가 리액트를 주로 쓰는 이유는 웹 개발 언어로 리액트를 먼저 접한 것도 있지만, 리액트로 웹 페이지를 만들면 HTML보다 전체 프로그램 설계를 깔끔하고 일관성있게 정리할 수 있는 편리한 조직성이 마음에 들었기 때문입니다.
+                            </Tex>
+                        </Extext>
+                    </Explanation>
                 </FirstSkill>
+                <SecondSkill>
+                    <Icon2>
+                        <TbBrandTypescript className='typescripting'></TbBrandTypescript>
+                    </Icon2>
+                    <Texts>Typescript</Texts>
+                    <Explanation>
+                        <Extext>
+                            <Tex>
+                                리액트만 써오다가 타입스크립트를 쓴지는 얼마 안된 일입니다. 리액트만 쓰다보니 타입스크립트 쓰는것은 미숙하지만, 코드 작성 단계에서 타입을 체크해 오류를 확인하고 미리 타입을 결정하기 때문에 실행 속도가 빨라서 잘 다루기 위해서 노력하고 있습니다.
+                            </Tex>
+                        </Extext>
+                    </Explanation>
+                </SecondSkill>
             </FadeIn>
         </Whatpage>
     );
 }
 
+const Tex = styled.h1`
+    font-size: 1.5vw;
+    font-family: Fall;
+    font-weight: lighter;
+    text-align: left;
+    margin-top: 3vw;
+    justify-content: center;
+    letter-spacing: 4px;
+`
+const Extext = styled.div`
+    position: absolute;
+    width: 56vw;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    height: 28vh;
+    transition: all ease-in-out .2s;
+`
 const rotation = keyframes`
     from {
         transform: rotate(0deg);
@@ -56,143 +88,101 @@ const rotation = keyframes`
         transform: rotate(360deg);
     }
 `
-const ThirdSkill = styled.div`
-    width: 80vw;
-    height: 7vh;
-    background-color: #ECE6CC;
-    text-align: left;
-    margin-left: 10vw;
-    justify-content: center;
-    border: 1px solid;
-    transition: all ease .5s;
-    z-index: 2;
-    border-radius: 0px 0px 10px 10px;
-    &:hover {
-        --te: visible;
-        --to: 1;
-        --tt: visibility 0s linear 0s, opacity 800ms;
-    }
-`
 const SecondSkill = styled.div`
-    width: 80vw;
-    height: 7vh;
-    background-color: #ECE6CC;
-    text-align: left;
-    margin-left: 10vw;
-    justify-content: center;
-    border: 1px solid;
-    transition: all ease .5s;
-    z-index: 2;
-    &:hover {
-        --se: visible;
-        --so: 1;
-        --st: visibility 0s linear 0s, opacity 800ms;
-    }
-`
-const Text = styled.p`
-    font-family: Nexabold;
-    font-size: 2.5vw;
-    margin-top: -5%;
-`
-const SecondIcon = styled.div`
-    position: absolute;
-    margin-left: 76.5vw;
-    margin-top: 1vh;
-    transition: all ease .5s;
-    cursor: pointer;
-    &:hover {
-            margin-top: 0.5vh;
-            transform: rotate( 180deg );
-    }
-`
-const Explanationse = styled.div`
-    width: 80vw;
-    height: 30vh;
-    background-color: black;
-    margin-top: 7vh;
-    visibility: var(--te);
-    opacity: var(--to);
-    border-radius: 0px 0px 10px 10px;
-    transition: all ease .5s;
-    z-index: 2;
-    transition: var(--tt);
-`
-const Explanations = styled.div`
-    width: 80vw;
-    height: 30vh;
-    background-color: black;
-    margin-top: 7vh;
-    visibility: var(--se);
-    opacity: var(--so);
-    border-radius: 0px 0px 20px 20px;
-    transition: all ease .5s;
-    z-index: 2;
-    transition: var(--st);
-`
-const Explanation = styled.div`
-    width: 80vw;
-    height: 30vh;
-    background-color: black;
-    margin-top: 7vh;
-    transition: all ease .5s;
-    z-index: 2;
-    visibility: var(--fe);
-    opacity: var(--fo);
-    transition: var(--ft);
-`
-const Icon = styled.div`
-    color: #61dafc;
-    
-    animation: ${rotation} infinite 20s linear;
-`
-
-const FirstSkill = styled.div`
     position: absolute;
     width: 20vw;
-    height: 50vh;
-    margin-left: 5vw;
-    margin-top: 20vh;
-    background-color: #ECE6CC;
-    border: 1px solid;
+    height: 35vh;
+    margin-left: 10vw;
+    background-color: aliceblue;
+    margin-top: 60vh;
     border-radius: 10px 10px 10px 10px;
     transition: all ease .5s;
     z-index: 1;
     justify-content: center;
     text-align: center;
-    &:hover {
-        --fe: visible;
-        --fo: 1;
-        --ft: visibility 0s linear 0s, opacity 800ms;
+`
+const Text = styled.p`
+    position: absolute;
+    text-align: center;
+    font-family: Nexabold;
+    font-size: 2.5vw;
+    margin-top: 6vw;
+    margin-left: 6.5vw;
+`
+const Texts = styled.p`
+    position: absolute;
+    text-align: center;
+    font-family: Nexabold;
+    font-size: 2.5vw;
+    margin-top: 6vw;
+    margin-left: 3.9vw;
+`
+const Explanation = styled.div`
+    position: absolute;
+    width: 60vw;
+    margin-left: 20vw;
+    height: 35vh;
+    background-color: white;
+    transition: all ease .5s;
+    z-index: 2;
+`
+const Icon2 = styled.div`
+    position: absolute;
+    margin-left: 15vw;
+    margin-top: 12vw;
+    color: #007acc;
+    animation: ${rotation} infinite 5s ease-in-out;
+    .typescripting {
+        position: relative;
+        font-size: 4vw;
     }
+`
+const Icon = styled.div`
+    position: absolute;
+    margin-left: 7vw;
+    margin-top: 5.5vw;
+    color: #61dafc;
+    animation: ${rotation} infinite 5s ease-in-out;
+    .reacticon {
+        position: relative;
+        left: 6vw;
+        top: 4vw;
+        font-size: 6vw;
+    }
+`
+const FirstSkill = styled.div`
+    position: absolute;
+    width: 20vw;
+    height: 35vh;
+    margin-left: 10vw;
+    background-color: aliceblue;
+    margin-top: 20vh;
+    border-radius: 10px 10px 10px 10px;
+    transition: all ease .5s;
+    z-index: 1;
+    justify-content: center;
+    text-align: center;
 `
 const Icons = styled.div`
     position: absolute;
     margin-left: 2vw;
     margin-top: 5vh;
+
 `
 const Title = styled.h1`
     position: absolute;
-    font-family: Efa;
-    font-size: 3rem;
+    font-family: Soojin;
+    font-size: 3vw;
     margin-left: 7vw;
     margin-top: 6vh;
 `
-
-const Whatpage = styled.div`
-    --fe: none;
-    --fo: 0;
-    --ft: visibility 0s linear 300ms, opacity 300ms;
-    --se: hidden;
-    --so: 0;
-    --st: visibility 0s linear 300ms, opacity 300ms;
-    --te: hidden;
-    --to: 0;
-    --tt: visibility 0s linear 300ms, opacity 300ms;      
+const Whatpage = styled.div`   
     position: absolute;
     width: 100%;
-    height: 930px;
+    height: 55vw;
     margin-top: 1860px;
     background-size: cover;
     opacity: 100%;
     background-color: #e9ecef;
+    transition: all ease-in-out .2s;
 `
