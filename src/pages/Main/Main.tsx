@@ -4,7 +4,7 @@ import Profilepic from '../../images/profile.jpg';
 import Github from '../../images/github.png';
 import Velog from '../../images/velog.jpg';
 import Notions from '../../images/notion.png';
-import FadeIn  from 'react-fade-in';
+import FadeIn from 'react-fade-in';
 import React from 'react';
 import { BsArrowDownCircle } from 'react-icons/bs';
 import './Main.scss';
@@ -25,7 +25,7 @@ export default function Main() {
     const [scrollPosition, setScrollPosition] = React.useState(0);
     const updateScroll = () => {
         setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-        if(window.scrollY < 700) {
+        if (window.scrollY < 700) {
             setJudge(true);
         }
         else {
@@ -59,8 +59,8 @@ export default function Main() {
                     <CircleB></CircleB>
                 </FadeIn>
                 <div className={scrollPosition < 100 ? "wrapping" : "nowrapping"}>
-                    <BsArrowDownCircle size="60" className='botarrow' onClick={nexted}/>
-                </div> 
+                    <BsArrowDownCircle size="3vw" className='botarrow' onClick={nexted} />
+                </div>
             </FadeIn>
         </Maining>
     );
@@ -70,16 +70,15 @@ const Bloging = styled.div`
     position: absolute;
     width: 30vw;
     height: 10vh;
-    maring-top;
     margin-left: 10vw;
     margin-top: 57vh;
 `
 const Imageone = styled.div`
     position: absolute;
     width: 5vw;
-    height: 10.2vh;
+    height: 5vw;
     margin-left: 0vw;
-    border-radius: 5rem;
+    border-radius: 5vw;
     background-image: url(${Github});
     background-size: cover;
     z-index: 5;
@@ -88,9 +87,9 @@ const Imageone = styled.div`
 const Imagetwo = styled.div`
     position: absolute;
     width: 5vw;
-    height: 10.3vh;
+    height: 5vw;
     margin-left: 7vw;
-    border-radius: 5rem;
+    border-radius: 5vw;
     background-image: url(${Velog});
     background-size: cover;
     z-index: 5;
@@ -99,9 +98,9 @@ const Imagetwo = styled.div`
 const Imagethree = styled.div`
     position: absolute;
     width: 5vw;
-    height: 10.3vh;
+    height: 5vw;
     margin-left: 14vw;
-    border-radius: 5rem;
+    border-radius: 5vw;
     background-image: url(${Notions});
     background-size: cover;
     z-index: 5;
@@ -117,8 +116,6 @@ const CircleB = styled.div`
     background-image: url(${Profilepic});
     background-size: cover;
 `
-
-
 const Maining = styled.div`
     position: absolute;
     height: 100vh;
@@ -155,7 +152,7 @@ const Title = styled.h1`
     margin-top: 36vh;  
     margin-left: 10vw; 
     font-family: Nexa;
-    font-size: 6rem;
+    font-size: 5vw;
     color: white;
 `
 const Subtitle = styled.h1`
@@ -163,7 +160,7 @@ const Subtitle = styled.h1`
     margin-top: 48vh;
     margin-left: 10.2vw; 
     font-family: Nexabold;
-    font-size: 2rem;
+    font-size: 2vw;
     color: white;
 `
 

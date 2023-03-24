@@ -25,7 +25,7 @@ export default function What() {
                 visible={judgement}
             >
                 <Icons>
-                    <SiStackblitz size={70}></SiStackblitz>
+                    <SiStackblitz className="thunder"></SiStackblitz>
                 </Icons>
                 <Title>주로 사용하는 기술들</Title>
             </FadeIn>
@@ -53,7 +53,7 @@ export default function What() {
                     <Explanation>
                         <Extext>
                             <Tex>
-                                리액트만 써오다가 타입스크립트를 쓴지는 얼마 안된 일입니다. 리액트만 쓰다보니 타입스크립트 쓰는것은 미숙하지만, 코드 작성 단계에서 타입을 체크해 오류를 확인하고 미리 타입을 결정하기 때문에 실행 속도가 빨라서 잘 다루기 위해서 노력하고 있습니다.
+                                리액트만 써오다가 타입스크립트를 쓴지는 얼마 안된 일입니다. 리액트만 쓰다보니 타입스크립트 쓰는것은 미숙하지만, 리액트와 비슷하며 코드 작성 단계에서 타입을 체크해 오류를 확인하고 미리 타입을 결정하기 때문에 실행 속도도 빨라서 잘 다루기 위해서 노력하고 있습니다.
                             </Tex>
                         </Extext>
                     </Explanation>
@@ -77,7 +77,7 @@ const Extext = styled.div`
     width: 56vw;
     margin-left: 2vw;
     margin-top: 3vh;
-    height: 28vh;
+    height: 28vw;
     transition: all ease-in-out .2s;
 `
 const rotation = keyframes`
@@ -95,7 +95,7 @@ const SecondSkill = styled.div`
     margin-left: 10vw;
     background-color: aliceblue;
     margin-top: 60vh;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 0px 0px 10px;
     transition: all ease .5s;
     z-index: 1;
     justify-content: center;
@@ -157,7 +157,7 @@ const FirstSkill = styled.div`
     margin-left: 10vw;
     background-color: aliceblue;
     margin-top: 20vh;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 0px 0px 10px;
     transition: all ease .5s;
     z-index: 1;
     justify-content: center;
@@ -167,7 +167,9 @@ const Icons = styled.div`
     position: absolute;
     margin-left: 2vw;
     margin-top: 5vh;
-
+    .thunder {
+        font-size: 4vw;
+    }
 `
 const Title = styled.h1`
     position: absolute;
