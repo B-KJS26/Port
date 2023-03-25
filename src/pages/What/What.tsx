@@ -9,11 +9,8 @@ export default function What() {
     const [scrollPosition, setScrollPosition] = React.useState(0);
     const updateScroll = () => {
         setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-        if (window.scrollY > 1200 && window.scrollY < 2300) {
+        if (window.scrollY > 1200) {
             setJudgement(true);
-        }
-        else {
-            setJudgement(false);
         }
     }
     React.useEffect(() => {
@@ -178,11 +175,9 @@ const Title = styled.h1`
     margin-left: 7vw;
     margin-top: 6vh;
 `
-const Whatpage = styled.div`   
-    position: absolute;
+const Whatpage = styled.div`
     width: 100%;
-    height: 55vw;
-    margin-top: 1860px;
+    height: 50vw;
     background-size: cover;
     opacity: 100%;
     background-color: #e9ecef;

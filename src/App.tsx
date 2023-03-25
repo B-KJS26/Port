@@ -8,13 +8,14 @@ import Project from './pages/Project/Project';
 
 function App() {
   return (
-    <Apps>
-      <Naving />
-      <Main />
-      <Who />
-      <What />
-      <Project />
-    </Apps>
+    <>
+      <Apps>
+        <Main />
+        <Who />
+        <What />
+        <Project />
+      </Apps>
+    </>
   );
 }
 

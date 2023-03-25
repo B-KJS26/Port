@@ -11,9 +11,6 @@ export default function Project() {
         if (window.scrollY > 2300) {
             setJudgement(true);
         }
-        else {
-            setJudgement(false);
-        }
     }
     React.useEffect(() => {
         window.addEventListener('scroll', updateScroll);
@@ -154,10 +151,8 @@ const Title = styled.div`
     margin-top: 6vh;
 `
 const Projectpage = styled.div`
-    position: absolute;
     width: 100%;
-    height: 2530px;
-    margin-top: 151vw;
+    height: 100vw;
     background-size: cover;
     opacity: 100%;
 `

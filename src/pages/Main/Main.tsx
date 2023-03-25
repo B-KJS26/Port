@@ -106,15 +106,16 @@ const Imagethree = styled.div`
     z-index: 5;
     cursor: pointer;
 `
-const CircleB = styled.div`
+const CircleB = styled.img.attrs({
+    src: `${Profilepic}`
+})`
+    width: 50px;
+    height: 30px;
     position: absolute;
-    width: 30vw;
-    height: 72vh;
-    margin-left: 57vw;
+    width: 25vw;
+    height: 36vw;
+    margin-left: 63vw;
     margin-top: 14vh;
-    background-color: black;
-    background-image: url(${Profilepic});
-    background-size: cover;
 `
 const Maining = styled.div`
     position: absolute;

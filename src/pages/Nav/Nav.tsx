@@ -21,14 +21,13 @@ export default function Naving() {
     function goproject() {
         window.scrollTo({ top: 2790, behavior: 'smooth' });
     }
-    
+
     const MainButton = styled.button`
     background: ${window.scrollY < 930 ? "linear-gradient(#fbb3e9, #fad9d7, #bffffd)" : "white"};
     width: 1.3vw;
     height: 2.7vh;
     border-radius: 50px;
     border: 0;
-    margin-top: 20px;
     cursor: pointer;
     box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.08);
     transform: ${window.scrollY < 930 ? "scale(1.4)" : "scale(1)"};
@@ -68,7 +67,6 @@ export default function Naving() {
         transition: .6s;
     }
 `
-
     const ProjectButton = styled.button`
     background: ${window.scrollY >= 2790 ? "linear-gradient(#fbb3e9, #fad9d7, #bffffd)" : "white"};
     width: 1.3vw;
@@ -78,7 +76,7 @@ export default function Naving() {
     margin-top: 20px;
     cursor: pointer;
     box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.08);
-    transform: ${window.scrollY >= 2790 ? "scale(1.5)": "scale(1)"};
+    transform: ${window.scrollY >= 2790 ? "scale(1.5)" : "scale(1)"};
     &:hover {
         transform: scale(1.5);
         transition: .6s;
@@ -98,13 +96,10 @@ export default function Naving() {
 
 const Nav = styled.div`
     position: fixed;
-    width: 1%;
-    height: 1%;
+    width: 100%;
+    height: 10%;
     z-index: 2;
-    margin-left: 98%;
-    transform: translateX(-99%);
-    margin-top: 18%;
     text-align: center;
-    
+    background: orange;
     `
 
