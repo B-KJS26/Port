@@ -29,6 +29,7 @@ export default function Project() {
                     <FirstTitle>JJOK</FirstTitle>
                     <BlackLine></BlackLine>
                     <FirstSub>학교에 다니는 학생들에게 양질의 정보(학사일정, 급식, 시간표 등)를 제공함으로써 학생들의 학교생활 질 향상을 위해 만든 웹 서비스입니다.</FirstSub>
+                    <Mores>More</Mores>
                 </FirstProject>
                 <SecondProject>
                     <SecondImage></SecondImage>
@@ -48,7 +49,9 @@ export default function Project() {
         </Projectpage>
     );
 }
-
+const Mores = styled.h1`
+    position: absolute;
+`
 const ThirdProject = styled.div`
     position: absolute;
     width: 75vw;

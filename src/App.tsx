@@ -5,6 +5,7 @@ import Naving from './pages/Nav/Nav';
 import Who from './pages/Who/Who';
 import What from './pages/What/What';
 import Project from './pages/Project/Project';
+import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <What />
         <Project />
       </Apps>
+      <Footer />
     </>
   );
 }
