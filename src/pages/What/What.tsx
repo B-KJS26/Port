@@ -88,7 +88,7 @@ const rotation = keyframes`
 const SecondSkill = styled.div`
     position: absolute;
     width: 20vw;
-    height: 35vh;
+    height: 17vw;
     margin-left: 10vw;
     background-color: aliceblue;
     margin-top: 60vh;
@@ -118,7 +118,7 @@ const Explanation = styled.div`
     position: absolute;
     width: 60vw;
     margin-left: 20vw;
-    height: 35vh;
+    height: 17vw;
     background-color: white;
     transition: all ease .5s;
     z-index: 2;
@@ -150,7 +150,7 @@ const Icon = styled.div`
 const FirstSkill = styled.div`
     position: absolute;
     width: 20vw;
-    height: 35vh;
+    height: 17vw;
     margin-left: 10vw;
     background-color: aliceblue;
     margin-top: 20vh;

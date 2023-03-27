@@ -21,7 +21,7 @@ export default function Project() {
                 visible={judgement}
             >
                 <Icons>
-                    <SiPolymerproject size={70}></SiPolymerproject>
+                    <SiPolymerproject className="sipoly"></SiPolymerproject>
                 </Icons>
                 <Title>프로젝트들</Title>
                 <FirstProject>
@@ -104,7 +104,7 @@ const FirstSub = styled.p`
     position: absolute;
     font-family: Efa;
     margin-left: 40vw;
-    font-size: 2rem;
+    font-size: 1.8vw;
     z-index: 3;
 `
 const BlackLine = styled.div`
@@ -119,7 +119,7 @@ const FirstTitle = styled.h1`
     font-family: Efa;
     margin-left: 40vw;
     margin-top: -5vh;
-    font-size: 3rem;
+    font-size: 2.5vw;
 
 `
 const FirstImage = styled.img.attrs({
@@ -142,20 +142,24 @@ const FirstProject = styled.div`
 `
 const Icons = styled.div`
     position: absolute;
-    margin-left: 2vw;
+    margin-left: 0.3vw;
     margin-top: 5vh;
+    .sipoly{
+        width: 7vw;
+        height: 3.5vw;
+    }
 `
 
 const Title = styled.div`
     position: absolute;
     font-family: Efa;
-    font-size: 3rem;
+    font-size: 2.8vw;
     margin-left: 7vw;
-    margin-top: 6vh;
+    margin-top: 5.5vh;
 `
 const Projectpage = styled.div`
     width: 100%;
-    height: 100vw;
+    height: 260vh;
     background-size: cover;
     opacity: 100%;
 `
