@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Ligradient from '../../images/111.png';
-import Profilepic from '../../images/profile.jpg';
+import Profilepic from '../../images/pro.jpg';
 import Github from '../../images/github.png';
 import Velog from '../../images/velog.jpg';
 import Notions from '../../images/notion.png';

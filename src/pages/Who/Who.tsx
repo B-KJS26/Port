@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import React from 'react';
-import Profilepic from '../../images/profile.jpg';
+import Profilepic from '../../images/pro.jpg';
 import FadeIn from "react-fade-in/lib/FadeIn";
 import { media } from "../../styles/media";
 export default function Who() {

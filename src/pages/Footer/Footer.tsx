@@ -26,10 +26,18 @@ export default function Footer() {
                     <Imagetwo onClick={vel}></Imagetwo><Text>Velog</Text>
                     <Imagethree onClick={not}></Imagethree><Text>Notion</Text>
                 </Blogs>
+                <Notice> 이 포트폴리오 사이트는 앞으로 계속 업데이트 될 예정입니다.</Notice>
             </Footermains>
         </>
     );
 }
+const Notice = styled.h1`
+    position: absolute;
+    font-family: Efa;
+    margin-left: 3vw;
+    font-size: 2.5vw;
+    margin-top: 24vw;
+`
 const Text = styled.span`
     font-family: Nexa;
     font-size: 2.5vw;

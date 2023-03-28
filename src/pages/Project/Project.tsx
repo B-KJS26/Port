@@ -3,6 +3,7 @@ import React from 'react';
 import { SiPolymerproject } from 'react-icons/si';
 import Sample from '../../images/sample.jpg';
 import FadeIn from "react-fade-in/lib/FadeIn";
+import ReactPlayer from "react-player";
 export default function Project() {
     const [judgement, setJudgement] = React.useState(false);
     const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -25,14 +26,26 @@ export default function Project() {
                 </Icons>
                 <Title>프로젝트들</Title>
                 <FirstProject>
-                    <FirstImage></FirstImage>
-                    <FirstTitle>JJOK</FirstTitle>
+                    <ReactPlayer
+                        className="video"
+                        url='videos/JJOK.mp4'
+                        controls={true}
+                        width="55%"
+                    >
+                    </ReactPlayer>
+                    <FirstTitle>WELBATO</FirstTitle>
                     <BlackLine></BlackLine>
                     <FirstSub>학교에 다니는 학생들에게 양질의 정보(학사일정, 급식, 시간표 등)를 제공함으로써 학생들의 학교생활 질 향상을 위해 만든 웹 서비스입니다.</FirstSub>
                     <Mores>More</Mores>
                 </FirstProject>
                 <SecondProject>
-                    <SecondImage></SecondImage>
+                    <ReactPlayer
+                        className="videos"
+                        url='videos/KKM.mp4'
+                        controls={true}
+                        width="55%"
+                    >
+                    </ReactPlayer>
                     <Textbox>
                         <SecondTitle>꼬꼬막</SecondTitle>
                         <BlackLine2></BlackLine2>
@@ -40,10 +53,16 @@ export default function Project() {
                     </Textbox>
                 </SecondProject>
                 <ThirdProject>
-                    <FirstImage></FirstImage>
-                    <FirstTitle>건강하게해조</FirstTitle>
+                    <ReactPlayer
+                        className="video"
+                        url='videos/spotify.mkv'
+                        controls={true}
+                        width="55%"
+                    >
+                    </ReactPlayer>
+                    <FirstTitle>SpotifyClone</FirstTitle>
                     <BlackLine></BlackLine>
-                    <FirstSub>코로나 19로 인한 사람들의 줄어든 운동량을 늘리기 위해 집이나, 집 근처에서 사람들과 함께 게임형식으로 경쟁하면서 운동할 수 있으면 어떨까? 라는 생각에서 출발해 만들어진 앱 서비스 입니다.</FirstSub>
+                    <FirstSub>평소에 스포티파이를 좋아하는데, 갑작스럽게 스포티파이 클론 코딩을 해보면 어떨까 라는 생각이 떠올라서 시작하게 되었다. 스포티파이 홈페이지를 그대로 똑같이 클론한 것이 아니라 내 마음대로 한 번 커스텀 마이징 해보았다.</FirstSub>
                 </ThirdProject>
             </FadeIn>
         </Projectpage>
@@ -51,15 +70,28 @@ export default function Project() {
 }
 const Mores = styled.h1`
     position: absolute;
+    margin-left: 75vw;
+    margin-top: 13vw;
+    font-family: Nexa;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.3);
+        transition: all ease-in-out .5s;
+    }
 `
 const ThirdProject = styled.div`
     position: absolute;
-    width: 75vw;
+    width: 80vw;
     height: 30vw;
     margin-left: 7.5vw;
     margin-top: 175vh;
     text-align: left;
     justify-content: center;
+    .video {
+        margin-top: -2vw;
+        margin-left: -4vw;
+        position: absolute;
+    }
 `
 const BlackLine2 = styled.div`
     width: 40vw;
@@ -99,11 +131,16 @@ const SecondProject = styled.div`
     margin-top: 100vh;
     text-align: left;
     justify-content: center;
+    .videos {
+        margin-top: -2vw;
+        margin-left: 45vw;
+        position: absolute;
+    }
 `
 const FirstSub = styled.p`
     position: absolute;
     font-family: Efa;
-    margin-left: 40vw;
+    margin-left: 42vw;
     font-size: 1.8vw;
     z-index: 3;
 `
@@ -111,13 +148,13 @@ const BlackLine = styled.div`
     width: 40vw;
     height: 0.6vh;
     background-color: black;
-    margin-left: 40vw;
+    margin-left: 42vw;
     margin-top: 3vh;
 `
 const FirstTitle = styled.h1`
     position: absolute;
     font-family: Efa;
-    margin-left: 40vw;
+    margin-left: 42vw;
     margin-top: -5vh;
     font-size: 2.5vw;
 
@@ -133,12 +170,17 @@ const FirstImage = styled.img.attrs({
 `;
 const FirstProject = styled.div`
     position: absolute;
-    width: 75vw;
+    width: 80vw;
     height: 30vw;
     margin-left: 7.5vw;
     margin-top: 30vh;
     text-align: left;
     justify-content: center;
+    .video {
+        margin-top: -2vw;
+        margin-left: -4vw;
+        position: absolute;
+    }
 `
 const Icons = styled.div`
     position: absolute;
@@ -149,7 +191,6 @@ const Icons = styled.div`
         height: 3.5vw;
     }
 `
-
 const Title = styled.div`
     position: absolute;
     font-family: Efa;
