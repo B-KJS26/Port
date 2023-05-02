@@ -16,6 +16,10 @@ export default function What() {
     React.useEffect(() => {
         window.addEventListener('scroll', updateScroll);
     }, []);
+    function goproject() {
+        window.location.href = "https://future-march-764.notion.site/Projects-095f08e2192647d29beff333f372ca9d";
+    }
+
     return (
         <Whatpage>
             <FadeIn
@@ -39,7 +43,7 @@ export default function What() {
                             <Tex>
                                 제가 리액트를 주로 쓰는 이유는 웹 개발 언어로 리액트를 먼저 접한 것도 있지만, 리액트로 웹 페이지를 만들면 HTML보다 전체 프로그램 설계를 깔끔하고 일관성있게 정리할 수 있는 편리한 조직성이 마음에 들었기 때문입니다.
                             </Tex>
-                            <Gotext>
+                            <Gotext onClick={goproject}>
                                 MORE
                             </Gotext>
                         </Extext>
@@ -55,6 +59,9 @@ export default function What() {
                             <Tex>
                                 리액트만 써오다가 타입스크립트를 쓴지는 얼마 안된 일입니다. 리액트만 쓰다보니 타입스크립트 쓰는것은 미숙하지만, 리액트와 비슷하며 코드 작성 단계에서 타입을 체크해 오류를 확인하고 미리 타입을 결정하기 때문에 실행 속도도 빨라서 잘 다루기 위해서 노력하고 있습니다.
                             </Tex>
+                            <Gotexttwo onClick={goproject}>
+                                MORE
+                            </Gotexttwo>
                         </Extext>
                     </Explanation>
                 </SecondSkill>
@@ -62,12 +69,34 @@ export default function What() {
         </Whatpage>
     );
 }
-
+const Gotexttwo = styled.p`
+font-size: 1.5vw;
+margin-left: 50vw;
+margin-top: 1vw;
+font-family: Fall;
+&::after {position: absolute; margin-left: 50.2vw; content:""; display: block; border-bottom: 3px solid #000; transition: .6s; left: 5%; width: 0;}
+&:hover::after {width: 10%; left: 0; right: auto;}
+&:hover {
+    font-size: 1.7vw;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+`
 const Gotext = styled.p`
-    
+    font-size: 1.5vw;
+    margin-left: 50vw;
+    margin-top: 3vw;
+    font-family: Fall;
+    &::after {position: absolute; margin-left: 50.2vw; content:""; display: block; border-bottom: 3px solid #000; transition: .6s; left: 5%; width: 0;}
+    &:hover::after {width: 10%; left: 0; right: auto;}
+    &:hover {
+        font-size: 1.7vw;
+        transition: all ease-in-out .3s;
+        cursor: pointer;
+    }
 `
 const Tex = styled.h1`
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-family: Fall;
     font-weight: lighter;
     text-align: left;
