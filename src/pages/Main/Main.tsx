@@ -20,7 +20,7 @@ export default function Main() {
         window.location.href = 'https://github.com/B-KJS26';
     }
     function notioning() {
-        window.location.href = 'https://www.notion.so/70843f63a76440f9b6338b3cf92b1351';
+        window.location.href = 'https://future-march-764.notion.site/d2494062b9534bd88ad691a72a785928';
     }
     const [scrollPosition, setScrollPosition] = React.useState(0);
     const updateScroll = () => {

@@ -4,10 +4,10 @@ import Nexalight from '../fonts/Nexa-ExtraLight.ttf';
 import Nexablack from '../fonts/Nexa-Trial-Black.ttf';
 import Nexabold from '../fonts/Nexa-Trial-Bold.ttf';
 import Nexaheavy from '../fonts/Nexa-Trial-Heavy.ttf';
-import EFA from '../fonts/EFA.ttf';
-import Soo from '../fonts/ImcreSoojin.ttf';
-import Nanum from '../fonts/nanum.ttf';
-import Fall from '../fonts/fall.ttf';
+import EFA from '../fonts/omyu.ttf';
+import Soo from '../fonts/omyu.ttf';
+import Nanum from '../fonts/omyu.ttf';
+import Fall from '../fonts/omyu.ttf';
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Nexa';

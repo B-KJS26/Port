@@ -25,7 +25,7 @@ export default function Who() {
             >
                 <Profileimage></Profileimage>
                 <Subed>소통을 좋아하며 모든 일에 최선을 다하는</Subed>
-                <Name><Big>김준서</Big>입니다.</Name>
+                <Name><Big>김준서</Big> 입니다.</Name>
                 <Pinkline></Pinkline>
                 <Blackline></Blackline>
                 <Introduction>
@@ -46,10 +46,10 @@ export default function Who() {
 
 const Pinkline = styled.div`
     position: absolute;
-    width: 7.5vw;
+    width: 7.2vw;
     height: 0.5vw;
-    margin-left: 44.5vw;
-    margin-top: 17.5vw;
+    margin-left: 44.8vw;
+    margin-top: 18vw;
     background-color: pink;
 `
 const Pack = styled.div`
@@ -59,7 +59,7 @@ margin-top: 80vh;
 cursor: pointer;
 `
 const Big = styled.span`
-    font-size: 2.5vw;
+    font-size: 2.8vw;
 `
 const Mores = styled.h1`
     font-family: Nexabold;
@@ -71,14 +71,14 @@ const Mores = styled.h1`
 const Name = styled.h1`
     position: absolute;
     font-family: Efa;
-    font-size: 2vw;
-    margin-left: 45vw;
-    margin-top: 14.7vw;
+    font-size: 2.5vw;
+    margin-left: 45.4vw;
+    margin-top: 15vw;
 `
 const Subed = styled.p`
     position: absolute;
     font-family: Efa;
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin-left: 45vw;
     margin-top: 12vw;
     ${media.tablet`
@@ -104,7 +104,7 @@ const Blackline = styled.div`
     background-color: black;
 `
 const Intro = styled.p`
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     line-height: 3.5vh;
 `
 const Whopage = styled.div`

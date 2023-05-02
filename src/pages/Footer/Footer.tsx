@@ -11,7 +11,7 @@ export default function Footer() {
         window.location.href = "https://velog.io/@digyrh456789";
     }
     function not() {
-        window.location.href = "https://www.notion.so/70843f63a76440f9b6338b3cf92b1351";
+        window.location.href = "https://future-march-764.notion.site/d2494062b9534bd88ad691a72a785928";
     }
     return (
         <>

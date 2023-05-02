@@ -39,6 +39,9 @@ export default function What() {
                             <Tex>
                                 제가 리액트를 주로 쓰는 이유는 웹 개발 언어로 리액트를 먼저 접한 것도 있지만, 리액트로 웹 페이지를 만들면 HTML보다 전체 프로그램 설계를 깔끔하고 일관성있게 정리할 수 있는 편리한 조직성이 마음에 들었기 때문입니다.
                             </Tex>
+                            <Gotext>
+                                MORE
+                            </Gotext>
                         </Extext>
                     </Explanation>
                 </FirstSkill>
@@ -60,6 +63,9 @@ export default function What() {
     );
 }
 
+const Gotext = styled.p`
+    
+`
 const Tex = styled.h1`
     font-size: 1.5vw;
     font-family: Fall;
