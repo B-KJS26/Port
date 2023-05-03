@@ -16,6 +16,9 @@ export default function Project() {
     React.useEffect(() => {
         window.addEventListener('scroll', updateScroll);
     }, []);
+    function goproject() {
+        window.location.href = "https://future-march-764.notion.site/Projects-095f08e2192647d29beff333f372ca9d";
+    }
     return (
         <Projectpage>
             <FadeIn
@@ -36,7 +39,7 @@ export default function Project() {
                     <FirstTitle>WELBATO</FirstTitle>
                     <BlackLine></BlackLine>
                     <FirstSub>학교에 다니는 학생들에게 양질의 정보(학사일정, 급식, 시간표 등)를 제공함으로써 학생들의 학교생활 질 향상을 위해 만든 웹 서비스입니다.</FirstSub>
-                    <Mores>More</Mores>
+                    <Mores onClick={goproject}>More</Mores>
                 </FirstProject>
                 <SecondProject>
                     <ReactPlayer
@@ -51,6 +54,7 @@ export default function Project() {
                         <BlackLine2></BlackLine2>
                         <SecondSub>꼬꼬막은 동네 안에서 사용자끼리 옷을 대여하고 교환할 수 있는 웹 / 앱 서비스입니다. 누구나 자신이 잘 안 입는 옷을 대여해주거나, 크리스마스와 같은 특별한 날에만 입고 싶은 옷을 대여할 수 있습니다.</SecondSub>
                     </Textbox>
+                    <Morese onClick={goproject}>More</Morese>
                 </SecondProject>
                 <ThirdProject>
                     <ReactPlayer
@@ -63,11 +67,25 @@ export default function Project() {
                     <FirstTitle>SpotifyClone</FirstTitle>
                     <BlackLine></BlackLine>
                     <FirstSub>평소에 스포티파이를 좋아하는데, 갑작스럽게 스포티파이 클론 코딩을 해보면 어떨까 라는 생각이 떠올라서 시작하게 되었다. 스포티파이 홈페이지를 그대로 똑같이 클론한 것이 아니라 내 마음대로 한 번 커스텀 마이징 해보았다.</FirstSub>
+                    <Mores onClick={goproject}>More</Mores>
                 </ThirdProject>
             </FadeIn>
         </Projectpage>
     );
 }
+const Morese = styled.h1`
+    position: absolute;
+    margin-left: 35vw;
+    margin-top: -5vw;
+    font-family: Nexa;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.3);
+        transition: all ease-in-out .5s;
+    }
+    &::after {position: absolute; margin-left: 2vw; content:""; display: block; border-bottom: 3px solid #000; transition: .6s; left: 5%; width: 0;}
+&:hover::after {width: 100%; left: -45%; right: auto;}
+`
 const Mores = styled.h1`
     position: absolute;
     margin-left: 75vw;
@@ -78,6 +96,8 @@ const Mores = styled.h1`
         transform: scale(1.3);
         transition: all ease-in-out .5s;
     }
+    &::after {position: absolute; margin-left: 2vw; content:""; display: block; border-bottom: 3px solid #000; transition: .6s; left: 5%; width: 0;}
+&:hover::after {width: 100%; left: -45%; right: auto;}
 `
 const ThirdProject = styled.div`
     position: absolute;
